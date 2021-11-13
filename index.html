@@ -22,7 +22,14 @@
                 <ul>
                     <li><a href="#">Главная</a></li>
                     <li><a href="#">Блог</a></li>
-                    <li><a href="#">Курсы</a></li>
+                    <li class="li-dropdown">
+                        <a href="#">Курсы</a>
+                        <div class="li-dropdown-content">
+                            <a href="#">Курс. Программирование на Python.</a><br>
+                            <a href="#">Курс. Автоматизация тестирования.</a><br>
+                            <a href="#">Курс. Работа с Git.</a><br>
+                        </div>
+                    </li>
                     <li><a href="#">Задачник</a></li>
                     <li><a href="#">О проекте</a></li>
                 </ul>
@@ -54,7 +61,14 @@
                     <ul>
                         <li><a href="#">Главная</a></li>
                         <li><a href="#">Блог</a></li>
-                        <li><a href="#">Курсы</a></li>
+                        <li class="li-dropdown text-center">
+                            <a href="#">Курсы</a>
+                            <div class="li-dropdown-content-secret">
+                                <a href="#">Курс. Программирование на Python.</a><br>
+                                <a href="#">Курс. Автоматизация тестирования.</a><br>
+                                <a href="#">Курс. Работа с Git.</a><br>
+                            </div>
+                        </li>
                         <li><a href="#">Задачник</a></li>
                         <li><a href="#">О проекте</a></li>
                     </ul>
@@ -69,9 +83,281 @@
                 </div>
             </div>
         </nav>
+        <div class="banner-img">
+            <img src="img/Smartiqa_Background_.webp" alt="">
+        </div>
+        <div class="social-responsive-icons" id="app1">
+            <div class="img" v-if="icons"><a href="#"><img src="img/logo3.svg" alt=""></a></div>
+            <div class="img" v-if="icons"><a href="#"><img src="img/logo4.svg" alt=""></a></div>
+            <div class="img" v-if="icons"><a href="#"><img src="img/logo5.svg" alt=""></a></div>
+            <div class="img" v-if="icons"><a href="#"><img src="img/logo6.svg" alt=""></a></div>
+            <div class="img" v-if="icons"><a href="#"><img src="img/logo7.svg" alt=""></a></div>
+            <span>
+                <i class="far fa-comment-lines" v-on:click="show" v-if="comment" style="background-color: darkcyan;color: #fff;"></i>
+                <i class="fas fa-times" v-on:click="hide" v-if="times"></i>
+            </span>
+        </div>
     </header>
-
-
+    <main>
+        <div class="main-content-1 pt-5">
+            <div class="container pt-5">
+                <h1 class="text-center"><img src="img/Smartiqa_Logo_100100.webp" alt=""></h1>
+                <h1 class="text-center pt-5">SMARTIQA</h1>
+                <h2 class="text-center pt-3">IT Блог | Программирование и QA</h2>
+                <div class="social-media-icons main">
+                    <span><i class="fab fa-vk"></i></span>
+                    <span><i class="fab fa-youtube"></i></span>
+                    <span><i class="fab fa-telegram-plane"></i></span>
+                    <br>
+                    <br>
+                    <br>
+                    <button class="btn-subscribe">Подписаться</button>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="main-content-2 pt-5 bg-pink">
+            <div class="container pt-5 text-center">
+                <h1>Полезные статьи</h1>
+                <h4>Публикуем актуальные новости из мира разработчиков и QA, образовательные статьи и переводы</h4>
+                <br>
+                <br>
+                <a href="#" class="btns">All</a>
+                <a href="#" class="btns">Linux</a>
+                <a href="#" class="btns">Selenium</a>
+                <a href="#" class="btns">GUI</a>
+                <a href="#" class="btns">AUTOMATION</a>
+                <a href="#" class="btns">Framework</a>
+                <a href="#" class="btns">Html</a>
+                <a href="#" class="btns">Python</a>
+                <a href="#" class="btns">Programming</a>
+                <a href="#" class="btns">QA</a>
+                <a href="#" class="btns">Performance</a>
+                <a href="#" class="btns">API</a>
+                <a href="#" class="btns">Neural Network</a>
+                <br>
+                <br>
+                <div class="row">
+                    <div class="col-md-4 p-3">
+                        <div class="card">
+                            <img class="card-img-top" src="img/a21_Smartiqa_python_.webp" alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title">Библиотека Requests: эффективные и простые HTTP-запросы в Python</h4>
+                                <p class="card-text">Отправление запросов и получение ответов от сайтов напрямую и через API. Основные свойства и методы библиотеки Requests. Простое управление web-приложениями с помощью Python.</p>
+                                <span>14.03.2021</span>
+                            </div>
+                        </div>                          
+                    </div>
+                    <div class="col-md-4 p-3">
+                        <div class="card">
+                            <img class="card-img-top" src="img/Smartiqa_Neural_Netw.webp" alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title">Библиотека Requests: эффективные и простые HTTP-запросы в Python</h4>
+                                <p class="card-text">Отправление запросов и получение ответов от сайтов напрямую и через API. Основные свойства и методы библиотеки Requests. Простое управление web-приложениями с помощью Python.</p>
+                                <span>14.03.2021</span>
+                            </div>
+                        </div>                          
+                    </div>
+                    <div class="col-md-4 p-3">
+                        <div class="card">
+                            <img class="card-img-top" src="img/a19_Smartiqa_Neural_.webp" alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title">Библиотека Requests: эффективные и простые HTTP-запросы в Python</h4>
+                                <p class="card-text">Отправление запросов и получение ответов от сайтов напрямую и через API. Основные свойства и методы библиотеки Requests. Простое управление web-приложениями с помощью Python.</p>
+                                <span>14.03.2021</span>
+                            </div>
+                        </div>                          
+                    </div>
+                    <div class="col-md-4 p-3">
+                        <div class="card">
+                            <img class="card-img-top" src="img/a18_Smartiqa_Python_.webp" alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title">Библиотека Requests: эффективные и простые HTTP-запросы в Python</h4>
+                                <p class="card-text">Отправление запросов и получение ответов от сайтов напрямую и через API. Основные свойства и методы библиотеки Requests. Простое управление web-приложениями с помощью Python.</p>
+                                <span>14.03.2021</span>
+                            </div>
+                        </div>                          
+                    </div>
+                    <div class="col-md-4 p-3">
+                        <div class="card">
+                            <img class="card-img-top" src="img/Smartiqa_neural_netw1.webp" alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title">Библиотека Requests: эффективные и простые HTTP-запросы в Python</h4>
+                                <p class="card-text">Отправление запросов и получение ответов от сайтов напрямую и через API. Основные свойства и методы библиотеки Requests. Простое управление web-приложениями с помощью Python.</p>
+                                <span>14.03.2021</span>
+                            </div>
+                        </div>                          
+                    </div>
+                    <div class="col-md-4 p-3">
+                        <div class="card">
+                            <img class="card-img-top" src="img/Smartiqa_Test_Plan_A.webp" alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title">Библиотека Requests: эффективные и простые HTTP-запросы в Python</h4>
+                                <p class="card-text">Отправление запросов и получение ответов от сайтов напрямую и через API. Основные свойства и методы библиотеки Requests. Простое управление web-приложениями с помощью Python.</p>
+                                <span>14.03.2021</span>
+                            </div>
+                        </div>                          
+                    </div>
+                    <br>
+                    <br>
+                    <h6 class="text-center pt-5"><button class="btn-see">See More</button></h6>
+                </div>
+            </div>
+            <br>
+            <br>
+        </div>
+        <div class="main-content-3 bg-light">
+            <div class="container pt-5">
+                <h1 class="text-center pt-5">Курсы 2021</h1>
+                <h4 class="text-center pt-3">В этом году выпускаем три новых бесплатных курса:</h4>
+                <div class="row pt-5">
+                    <div class="col-md-6 p-3">
+                        <div class="card">
+                            <img class="card-img-top" src="img/_10.webp" alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title">
+                                    Курс "Программирование на Python"</h4>
+                                <p class="card-text">
+                                    Курс "Программирование на Python"<br>
+                                    Уровень: Начальный<br>
+                                    Количество уроков: 6<br>
+                                    Стоимость: Бесплатно<br>
+                                    Релиз: 2020</p>
+                                <a href="#!" class="btn btn-dark">Go somewhere</a>
+                                <a href="#!" class="btn btn-light">Go somewhere</a>
+                            </div>
+                        </div>                          
+                    </div>
+                    <div class="col-md-6 p-3">
+                        <div class="card">
+                            <img class="card-img-top" src="img/Smartiqa_Automation_.webp" alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title">
+                                    Курс "Программирование на Python"</h4>
+                                <p class="card-text">
+                                    Курс "Программирование на Python"<br>
+                                    Уровень: Начальный<br>
+                                    Количество уроков: 6<br>
+                                    Стоимость: Бесплатно<br>
+                                    Релиз: 2020</p>
+                                <a href="#!" class="btn btn-dark">Go somewhere</a>
+                                <a href="#!" class="btn btn-light">Go somewhere</a>
+                            </div>
+                        </div>                          
+                    </div>
+                    <div class="col-md-6 p-3">
+                        <div class="card">
+                            <img class="card-img-top" src="img/Smartiqa_Git_Course_.webp" alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title">
+                                    Курс "Программирование на Python"</h4>
+                                <p class="card-text">
+                                    Курс "Программирование на Python"<br>
+                                    Уровень: Начальный<br>
+                                    Количество уроков: 6<br>
+                                    Стоимость: Бесплатно<br>
+                                    Релиз: 2020</p>
+                                <a href="#!" class="btn btn-dark">Go somewhere</a>
+                                <a href="#!" class="btn btn-light">Go somewhere</a>
+                            </div>
+                        </div>                          
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+        <div class="main-content-2 pt-5">
+            <div class="container pt-5 text-center">
+                <h1>Задачник по Python 2021</h1>
+                <h4>Теоретическая справка, вопросы и задачи с решениями по 16ти темам</h4>
+                <br>
+                <br>
+                <br>
+                <br>
+                <div class="row">
+                    <div class="col-md-4 p-3">
+                        <div class="card">
+                            <img class="card-img-top" src="img/zadachi.webp" alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title">Библиотека Requests: эффективные и простые HTTP-запросы в Python</h4>
+                                <p class="card-text">Отправление запросов и получение ответов от сайтов напрямую и через API. Основные свойства и методы библиотеки Requests. Простое управление web-приложениями с помощью Python.</p>
+                                <span>14.03.2021</span>
+                            </div>
+                        </div>                          
+                    </div>
+                    <div class="col-md-4 p-3">
+                        <div class="card">
+                            <img class="card-img-top" src="img/Smartiqa_Workbook_Py.webp" alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title">Библиотека Requests: эффективные и простые HTTP-запросы в Python</h4>
+                                <p class="card-text">Отправление запросов и получение ответов от сайтов напрямую и через API. Основные свойства и методы библиотеки Requests. Простое управление web-приложениями с помощью Python.</p>
+                                <span>14.03.2021</span>
+                            </div>
+                        </div>                          
+                    </div>
+                    <div class="col-md-4 p-3">
+                        <div class="card">
+                            <img class="card-img-top" src="img/Smartiqa_Workbook_Py1.webp" alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title">Библиотека Requests: эффективные и простые HTTP-запросы в Python</h4>
+                                <p class="card-text">Отправление запросов и получение ответов от сайтов напрямую и через API. Основные свойства и методы библиотеки Requests. Простое управление web-приложениями с помощью Python.</p>
+                                <span>14.03.2021</span>
+                            </div>
+                        </div>                          
+                    </div>
+                    <br>
+                    <br>
+                    <h6 class="text-center pt-5"><button class="btn-see">See More</button></h6>
+                </div>
+                <br>
+                <br>
+                <br>
+                <br>
+                <h1 class="text-center">Мы можем оповещать вас о важных статьях и новостях.</h1>
+                <br>
+                <br>
+                <h5 class="text-center"><button class="btn-subscribe dark">Подписаться</button></h5>
+                <br>
+                <br>
+                <hr>
+                <br>
+                <div class="social-media-icons-big text-center">
+                    <span><i class="fab fa-vk"></i></span>
+                    <span><i class="fab fa-youtube"></i></span>
+                    <span><i class="fab fa-telegram-plane"></i></span>
+                </div>
+            </div>
+            <br>
+            <br>
+        </div>
+    </main>
+    <footer class="bg-dark pt-5 pb-3">
+        <div class="container">
+            <div class="footer-navs-block text-center text-light">
+                <ul style="list-style: none;">
+                    <li style="display: inline-block;margin: 10px;">Главная</li>
+                    <li style="display: inline-block;margin: 10px;">Блог</li>
+                    <li style="display: inline-block;margin: 10px;">Курсы</li>
+                    <li style="display: inline-block;margin: 10px;">Партнерские курсы</li>
+                    <li style="display: inline-block;margin: 10px;"> Задачник</li>
+                    <li style="display: inline-block;margin: 10px;">О нас</li>
+                    <li style="display: inline-block;margin: 10px;">Политика конфиденциальности</li>
+                </ul>
+            </div>
+            <div class="text-center mt-5 ">
+                <p style="color:gray;">
+                    © All Rights Reserved. 2018 - 2020. Smartiqa Blog.<br class="br">
+                    info@smartiqa.ru
+                </p>
+            </div>
+        </div>
+    </footer>
 
 <!-- Optional JavaScript; choose one of the two! -->
 
